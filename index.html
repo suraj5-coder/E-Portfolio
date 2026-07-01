@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suraj GM — Computer Science Engineering student at Reva University, Bangalore. Full Stack Developer, Python enthusiast, and automation specialist. View my portfolio, projects, and certifications.">
+    <meta name="keywords" content="Suraj GM, portfolio, developer, Python, Full Stack, Reva University, Bangalore, computer science">
+    <meta name="author" content="Suraj GM">
+    <title>Suraj GM | Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid" id="bgGrid"></div>
+    <div class="bg-gradient-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Suraj</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-ext">GM</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting animate-on-scroll">
+                    <span class="greeting-line"></span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-name animate-on-scroll">
+                    <span class="name-first">Suraj</span>
+                    <span class="name-last">GM</span>
+                </h1>
+                <div class="hero-role animate-on-scroll">
+                    <span class="role-prefix">&gt;&gt;</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    First-year Computer Science Engineering student at <strong>Reva University, Bangalore</strong> passionate about building practical solutions through <strong>Full Stack Development</strong>, <strong>Cloud Technology</strong>, and <strong>Automation</strong>.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="ph ph-rocket-launch"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="ph ph-envelope"></i>
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Hackathons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring avatar-ring-2"></div>
+                    <img src="assets/images/profile-avatar.png" alt="Suraj GM" class="avatar-image">
+                    <div class="avatar-badge">
+                        <i class="ph-fill ph-code"></i>
+                    </div>
+                </div>
+                <div class="floating-card card-python">
+                    <i class="ph-bold ph-file-py"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-card card-web">
+                    <i class="ph-bold ph-browser"></i>
+                    <span>Web Dev</span>
+                </div>
+                <div class="floating-card card-cloud">
+                    <i class="ph-bold ph-cloud"></i>
+                    <span>Cloud</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="ph ph-user"></i> About Me</span>
+                <h2 class="section-title">Crafting Digital <span class="gradient-text">Experiences</span></h2>
+                <p class="section-subtitle">A passionate developer on a journey to create meaningful technology</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text">
+                        <p>I'm a <strong>first-year B.Tech Computer Science & Engineering</strong> student at Reva University, Bangalore. My passion lies in solving real-world problems through code — from automating university attendance systems to designing software architectures for the gaming industry.</p>
+                        <p>I thrive in <strong>hackathon environments</strong> where creativity meets technical challenges. Whether it's building voice-activated AI agents or crafting Discord bots, I'm always pushing to learn and create.</p>
+                        <p>Currently diving deep into <strong>Full Stack Development</strong>, <strong>Python automation</strong>, and exploring <strong>Cloud Computing</strong> and <strong>AI Applications</strong>.</p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="ph ph-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech in CSE, Reva University</p>
+                                <span class="detail-meta">2025 – 2029</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ph ph-map-pin"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bangalore, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="ph ph-heart"></i>
+                            <div>
+                                <h4>Interests</h4>
+                                <p>Tech News, Hackathons, Emerging Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual animate-on-scroll">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="code-filename">suraj.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Suraj GM"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"CS Student"</span>
+        <span class="code-param">self</span>.languages = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"HTML"</span>,
+            <span class="code-string">"CSS"</span>, <span class="code-string">"C++"</span>
+        ]
+        <span class="code-param">self</span>.passion = [
+            <span class="code-string">"Full Stack Dev"</span>,
+            <span class="code-string">"Cloud Tech"</span>,
+            <span class="code-string">"Automation"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">motto</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Build. Learn. Repeat."</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="ph ph-lightning"></i> Skills & Tools</span>
+                <h2 class="section-title">My Technical <span class="gradient-text">Arsenal</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="ph ph-code"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="ph ph-wrench"></i>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="ph ph-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="ph ph-git-branch"></i> Git</span>
+                        <span class="skill-tag"><i class="ph ph-tree-structure"></i> PlantUML</span>
+                        <span class="skill-tag"><i class="ph ph-discord-logo"></i> Discord API</span>
+                        <span class="skill-tag"><i class="ph ph-terminal-window"></i> Automation</span>
+                        <span class="skill-tag"><i class="ph ph-cloud"></i> Cloud Computing</span>
+                    </div>
+                </div>
+
+                <!-- Interests -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="ph ph-compass"></i>
+                        </div>
+                        <h3>Areas of Interest</h3>
+                    </div>
+                    <div class="interest-cards">
+                        <div class="interest-card">
+                            <i class="ph ph-stack"></i>
+                            <span>Full Stack Dev</span>
+                        </div>
+                        <div class="interest-card">
+                            <i class="ph ph-cloud"></i>
+                            <span>Cloud Computing</span>
+                        </div>
+                        <div class="interest-card">
+                            <i class="ph ph-robot"></i>
+                            <span>AI Applications</span>
+                        </div>
+                        <div class="interest-card">
+                            <i class="ph ph-gear"></i>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="ph ph-folder-open"></i> Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">Real-world projects that showcase my skills and creativity</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: SLCM Bot -->
+                <div class="project-card animate-on-scroll" id="project-slcm">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="ph ph-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SLCM Attendance Automation Bot</h3>
+                    <p class="project-description">
+                        A custom Python script that automates the login and data retrieval process for the university SLCM portal. Integrated with Discord webhooks to send real-time attendance updates and alerts directly to a personal server.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>Automated login & data retrieval</span>
+                        </div>
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>Discord webhook integration</span>
+                        </div>
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>Real-time attendance alerts</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web Automation</span>
+                        <span class="tech-tag">Discord API</span>
+                        <span class="tech-tag">Web Scraping</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Gaming Industry Software Design -->
+                <div class="project-card animate-on-scroll" id="project-basd">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="ph ph-game-controller"></i>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Gaming Industry Software Design</h3>
+                    <p class="project-description">
+                        A comprehensive Business Analysis and Software Design (BASD) project focused on the gaming industry. Created detailed PlantUML diagrams to model system architecture and module interactions. Designed functional modules to simulate game logic and user management systems.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>System architecture modeling</span>
+                        </div>
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>PlantUML diagrams</span>
+                        </div>
+                        <div class="feature">
+                            <i class="ph ph-check-circle"></i>
+                            <span>Game logic & user management</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Software Design</span>
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">PlantUML</span>
+                        <span class="tech-tag">Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="ph ph-certificate"></i> Certifications</span>
+                <h2 class="section-title">Achievements & <span class="gradient-text">Credentials</span></h2>
+                <p class="section-subtitle">Professional certifications and event participations that mark my growth</p>
+            </div>
+            <div class="cert-timeline">
+                <!-- IBM Data Visualization -->
+                <div class="cert-card animate-on-scroll" id="cert-ibm-dv">
+                    <div class="cert-badge">
+                        <i class="ph ph-chart-bar"></i>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">IBM SkillsBuild</span>
+                            <span class="cert-date">April 2026</span>
+                        </div>
+                        <h3 class="cert-title">Data Visualization with Python</h3>
+                        <p class="cert-description">Completed IBM's comprehensive course on data visualization techniques using Python, covering libraries like Matplotlib, Seaborn, and Folium.</p>
+                        <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/a4d72a4bbe24419ba3c268507184fad0" target="_blank" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IBM Data Analysis -->
+                <div class="cert-card animate-on-scroll" id="cert-ibm-da">
+                    <div class="cert-badge">
+                        <i class="ph ph-chart-line-up"></i>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">IBM SkillsBuild</span>
+                            <span class="cert-date">April 2026</span>
+                        </div>
+                        <h3 class="cert-title">Data Analysis with Python</h3>
+                        <p class="cert-description">Completed IBM's course on data analysis fundamentals using Python, covering Pandas, NumPy, and statistical analysis techniques.</p>
+                        <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/646e62e64abf4d09ac23544c34594e18" target="_blank" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hack/Sprint -->
+                <div class="cert-card animate-on-scroll" id="cert-hacksprint">
+                    <div class="cert-badge cert-badge-hackathon">
+                        <i class="ph ph-trophy"></i>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">Dev/Track × Shardeum</span>
+                            <span class="cert-date">2025</span>
+                        </div>
+                        <h3 class="cert-title">Hack/Sprint Hackathon</h3>
+                        <p class="cert-description">Participated in the Hack/Sprint hackathon organized by Dev/Track in collaboration with MyStartupWave and Shardeum at Reva University. Demonstrated dedication to learning and growth within the tech community.</p>
+                    </div>
+                </div>
+
+                <!-- GFG Technical Scripter -->
+                <div class="cert-card animate-on-scroll" id="cert-gfg">
+                    <div class="cert-badge">
+                        <i class="ph ph-pen-nib"></i>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">GeeksforGeeks</span>
+                            <span class="cert-date">2026</span>
+                        </div>
+                        <h3 class="cert-title">Technical Scripter 2026</h3>
+                        <p class="cert-description">Active participant in the GeeksforGeeks Technical Scripter challenge — a technical writing and consistency challenge fostering knowledge sharing in the developer community.</p>
+                        <a href="https://www.geeksforgeeks.org/profile/surajgcg0n" target="_blank" class="cert-link">
+                            <i class="ph ph-arrow-square-out"></i> View GFG Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI Voice Agent Challenge -->
+                <div class="cert-card animate-on-scroll" id="cert-aivoice">
+                    <div class="cert-badge cert-badge-hackathon">
+                        <i class="ph ph-microphone"></i>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">AI Challenge</span>
+                            <span class="cert-date">December 2025</span>
+                        </div>
+                        <h3 class="cert-title">AI Voice Agent Challenge</h3>
+                        <p class="cert-description">Participated in an intensive 10-day challenge focused on building voice-activated AI agents, gaining hands-on experience with AI and voice technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="ph ph-chat-dots"></i> Contact</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project idea or just want to say hello? I'd love to hear from you!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="ph ph-envelope-simple"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:surajgm005@gmail.com" id="contact-email">surajgm005@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4>University</h4>
+                            <p>Reva University</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="mailto:surajgm005@gmail.com" class="social-link" aria-label="Email" id="social-email">
+                            <i class="ph ph-envelope-simple"></i>
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/profile/surajgcg0n" target="_blank" class="social-link" aria-label="GeeksforGeeks" id="social-gfg">
+                            <i class="ph ph-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hey Suraj, I'd love to collaborate on..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <i class="ph ph-paper-plane-tilt"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">Suraj</span>
+                    <span class="logo-dot">.</span>
+                    <span class="logo-ext">GM</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built with <i class="ph-fill ph-heart" style="color: var(--accent-pink);"></i> by Suraj GM</p>
+                <p class="footer-copyright">&copy; 2026 Suraj GM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
